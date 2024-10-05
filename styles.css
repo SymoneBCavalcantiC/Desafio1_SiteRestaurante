@@ -1,0 +1,154 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif; /* Tipografia futurista */
+}
+
+html, body {
+    height: 100%;
+    background: url('imagens/steel_background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Fundo de aço escovado */
+    color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(27, 31, 56, 0.8); /* Fundo semitransparente */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    justify-content: center;                    
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 12vw; /* Logo com 12% da largura da tela */
+    margin-left: 10%;
+}
+
+nav {
+    margin: 0 90%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;    
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #120a8f;
+}
+
+/* Conteúdo */
+main {
+    flex: 1;
+    padding: 40px;
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Seção de Texto à Esquerda */
+.text-section {
+    width: 50%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 5em; /* Tamanho grande para o título */
+    margin-bottom: 20px;
+    color: #4169E1; /* Azul royal para o centro */
+    text-shadow: 
+        -1px -1px 0 #00008B, /* Sombra na parte superior esquerda (borda azul escura) */
+         1px -1px 0 #00008B, /* Sombra na parte superior direita */
+        -1px  1px 0 #00008B, /* Sombra na parte inferior esquerda */
+         1px  1px 0 #00008B; /* Sombra na parte inferior direita */
+}
+
+h2 {
+    font-size: 2em;
+    color: #00008B;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #120a8f;
+    margin-bottom: 20px;
+}
+
+/* Imagem do Lanche com Texto de Cardápio */
+.meal-img {
+    width: 100%; /* Imagem de largura total da div pai */
+    border: 5px solid #120a8f;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    color: #120a8f; /* Cor do texto de "Clique aqui para ver nosso cardápio" */
+}
+
+/* Seção de Imagem à Direita */
+.image-section {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra para destacar a imagem */
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(27, 31, 56, 0.8);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    color: #ffffff; 
+}
