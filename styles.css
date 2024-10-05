@@ -21,7 +21,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: rgba(27, 31, 56, 0.8); /* Fundo semitransparente */
+    background: url('imagens/ceu_menu_header.jpg') no-repeat center center fixed;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -140,7 +140,7 @@ p {
 
 /* Rodapé */
 footer {
-    background-color: rgba(27, 31, 56, 0.8);
+    background: url('imagens/ceu_menu_header.jpg') no-repeat center center fixed;
     color: whitesmoke;
     text-align: center;
     padding: 10px;
