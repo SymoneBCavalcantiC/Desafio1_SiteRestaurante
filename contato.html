@@ -8,46 +8,63 @@
 </head>
 <body>
     <header>
-        <h1>Galáxia Gourmet</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre_nos.html">Sobre nós</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <img src="imagens/letreiro.jpg" alt="Logo Galáxia Gourmet" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="sobre_nos.html">SOBRE NÓS</a></li>
+                    <li><a href="cardapio.html">CARDÁPIO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main>
-        <section>
+    <main class="contact-box">
+        <section id="contact-social">
+            <div>
+                <a href="cardapio.html"><img src="imagens/burguer-frango.jpg" alt="Imagem de um hamburguer de frango" id="lanche"></a>
+                <a href="cardapio.html"><img src="imagens/soda.jpg" alt="Imagem de uma soda italiana de morango" id="lanche"></a>
+                <a href="cardapio.html"><img src="imagens/salada.jpg" alt="Imagem de uma salada de folhas" id="lanche"></a>
+                <a href="cardapio.html"><img src="imagens/shake-morango.jpg" alt="Imagem de ummilkshake de morango" id="lanche"></a>
+                <a href="cardapio.html"><img src="imagens/ravioli.jpg" alt="Imagem de um ravioli à bolonhesa" id="lanche"></a>
+                <a href="cardapio.html"><img src="imagens/petit-gateau.jpg" alt="Imagem de um petit gateau" id="lanche"></a>
+            </div>
+            <h2>Nossas redes sociais</h2>
+            <p><strong>Siga-nos nas redes e acompanhe todas as novidades!</strong></p>
+            <div class="icons">
+                <a href="https://wa.me/558393028688" target="_blank"><img src="imagens/logo-whats.png" alt="Whatsapp" class="social-icon"></a>
+                <a href="https://www.facebook.com/profile.php?id=100075662374759" target="_blank"><img src="imagens/logo-facebook.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com/cavalcanti.mony" target="_blank"><img src="imagens/logo-insta.png" alt="Instagram" class="social-icon"></a>
+            </div>
+        </section>
+
+        <section id="contact-form">
             <h2>Entre em Contato Conosco!</h2>
-            <p>Seja para enviar sugestões, dúvidas ou até mesmo para reservar sua viagem culinária pelas estrelas, estamos aqui para ajudar! No Galáxia Gourmet, acreditamos que o contato com nossos visitantes é parte da nossa missão de proporcionar uma experiência única e envolvente.</p>
-            <p>Preencha o formulário abaixo ou nos contate pelas nossas redes sociais e WhatsApp. Vamos adorar ouvir você!</p>
+            <p>Seja para enviar sugestões, dúvidas ou até mesmo para reservar sua viagem gastronômica pelas estrelas, estamos aqui para ajudar! <br>
+            <p>No Galáxia Gourmet, acreditamos que o contato com nossos visitantes é parte da nossa missão de proporcionar uma experiência única e envolvente.</p><br>
+            <p>Preencha o formulário abaixo.<br> <strong>Vamos adorar ouvir você!</strong></p>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
                 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
                 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" required></textarea><br>
                 
                 <button type="submit">Enviar</button>
             </form>
-            
-            <h3>Nossas redes sociais:</h3>
-            <p>Siga-nos nas redes e acompanhe todas as novidades:</p>
-            <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
-            <!-- Botões de redes sociais -->
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Instagram</a>
         </section>
+
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Galáxia Gourmet</p>
+        <p><strong>&copy; 2024 Galáxia Gourmet</p></strong>
+        <a href="index.html"><img src="imagens/icon-home.png" alt="ícone home" class="social-icon"></a>
     </footer>
 </body>
 </html>

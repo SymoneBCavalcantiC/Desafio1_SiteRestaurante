@@ -8,55 +8,60 @@
 
 html, body {
     height: 100%;
-    background: url('imagens/steel_background.jpg') no-repeat center center fixed;
-    background-size: cover; /* Fundo de aço escovado */
-    color: #ffffff;
+    background: url('imagens/ceu_menu_header.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /*margin-top: 50px;*/
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 /* Cabeçalho */
 header {
-    background: url('imagens/ceu_menu_header.jpg') no-repeat center center fixed;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente */
+    backdrop-filter: blur(1.5px); /* Efeito de desfoque */
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.3); /* Linha de separação */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra na parte inferior */
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-}
-
-header h1 {
-    justify-content: center;                    
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
 }
 
 .header-content {
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
-.logo {
+header .logo {
     width: 12vw; /* Logo com 12% da largura da tela */
-    margin-left: 10%;
+    margin-left: 3%; 
+    border-radius: 85px;
+    border: 0.1px solid black;
 }
 
-nav {
+header nav {
     margin: 0 90%;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     display: flex;
-    gap: 60px;    
+    gap: 50px;    
+    margin: 0;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -64,57 +69,51 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #120a8f;
 }
+
 
 /* Conteúdo */
 main {
     flex: 1;
-    padding: 40px;
-    padding-top: 200px;
+    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-}
-
-/* Seção de Texto à Esquerda */
-.text-section {
-    width: 50%;
-    padding: 20px;
-}
-
 h1 {
-    font-size: 5em; /* Tamanho grande para o título */
-    margin-bottom: 20px;
-    color: #4169E1; /* Azul royal para o centro */
+    font-size: 3.6em; /* Tamanho grande para o título */
+    color: #090948; /* Azul royal para o centro */
     text-shadow: 
-        -1px -1px 0 #00008B, /* Sombra na parte superior esquerda (borda azul escura) */
-         1px -1px 0 #00008B, /* Sombra na parte superior direita */
-        -1px  1px 0 #00008B, /* Sombra na parte inferior esquerda */
-         1px  1px 0 #00008B; /* Sombra na parte inferior direita */
+        1px 1px 2px yellow, /* Sombra escura inferior direita */
+        -1px -1px 2px yellow;
 }
 
 h2 {
-    font-size: 2em;
-    color: #00008B;
+    font-size: 3.5em;
+    color: yellow;
     margin-bottom: 20px;
+    text-shadow: 
+        2px 2px 3px rgba(0, 0, 0, 0.7), /* Sombra escura inferior direita */
+        -2px -2px 3px rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+    font-size: 2em;
+    color: blue;
+    margin-bottom: 20px;
+    text-shadow: 
+        1px 1px 2px black, /* Sombra escura inferior direita */
+        -1px -1px 2px black;
 }
 
 p {
     font-size: 1.1em;
-    color: #120a8f;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
-/* Imagem do Lanche com Texto de Cardápio */
 .meal-img {
     width: 100%; /* Imagem de largura total da div pai */
     border: 5px solid #120a8f;
@@ -122,33 +121,149 @@ p {
     margin-bottom: 10px;
 }
 
-.text-section p {
-    color: #120a8f; /* Cor do texto de "Clique aqui para ver nosso cardápio" */
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    gap: 10px;
 }
-
-/* Seção de Imagem à Direita */
-.image-section {
-    width: 50%;
-    padding: 20px;
+.text-section {
+    width: 70%;
+    padding: 30px;
+    background-color:rgb(20, 20, 40); 
+    color: white;
+    text-align: center;
 }
-
 .image-section img {
     width: 100%;
+}
+
+#lanche {
+    width: 215px;
+    border-radius: 110px;
+    border: 1.3px solid black;
+}
+
+#logo1 {
+    width: 480px;
+    border-radius: 100px;
+}
+
+#contact-form, #contact-social {
+    flex: 1; /* Faz com que as seções ocupem o mesmo espaço */
+    max-width: 700px; /* Define uma largura máxima para evitar se expandirem demais */
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra para destacar a imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    display: flex;
+    flex-direction: column;
+}
+.contact-box {
+    width: 100%;
+    margin: 0 auto; /* Centraliza a seção principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#img-restaur {
+    width: 50%;
+    height: 100px;
+}
+
+#contact-form {
+    background-color: #090948;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+}
+
+#contact-social {
+    color: gray;
+    padding: 20px;
+}
+.social-icon {
+    width: 60px; /* Define o tamanho da imagem */
+    transition: transform 0.3s ease; /* Efeito de transição */
+}
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaçamento entre os ícones */
+    margin-top: 20px;
+}
+.box1 {
+    background-color: #090948;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 15px;
+    margin-top: 80px;
+    padding: 35px;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.box2 {
+    /*background: url('imagens/steel_background.jpg') no-repeat center center fixed;*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 15px;
+    padding: 35px;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    color: gray;
+}
+
+.box-cardapio {
+    background-color: #090948;
+    text-align: center;
+    padding: 70px;
+    color: white;
+    margin-top: 80px;
+}
+
+#box-comida {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente */
+    text-align: center;
+    border-radius: 20px;
+    padding: 70px;
+    color: white;
+}
+
+#mapa {
+    width: 215px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 /* Rodapé */
 footer {
-    background: url('imagens/ceu_menu_header.jpg') no-repeat center center fixed;
-    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente */
+    backdrop-filter: blur(0.7px); /* Desfoque */
+    border-top: 0.1px solid rgba(255, 255, 255, 0.3); /* Linha de separação */
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Sombra leve na borda superior */
+    position: relative; 
 }
+
 footer p {
     color: #ffffff; 
 }

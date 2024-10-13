@@ -8,61 +8,72 @@
 </head>
 <body>
     <header>
-        <h1>Galáxia Gourmet</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre_nos.html">Sobre nós</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <img src="imagens/letreiro.jpg" alt="Logo Galáxia Gourmet" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="sobre_nos.html">SOBRE NÓS</a></li>
+                    <li><a href="cardapio.html">CARDÁPIO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
         <section>
-            <h2>Cardápio</h2>
-            <h3>Nosso Cardápio Estelar</h3>
-            <p>Cada prato no Galáxia Gourmet foi cuidadosamente desenvolvido para refletir a grandiosidade e a diversidade do universo. Da Terra à borda do cosmos, trazemos uma fusão de sabores que promete surpreender todos os exploradores famintos. Viaje pelo nosso cardápio intergaláctico e descubra pratos que são verdadeiras constelações de sabor, preparados por chefs visionários.</p>
-            <p>Explore nossas opções e encontre a combinação perfeita para uma refeição que é verdadeiramente fora deste mundo:</p>
-            <table>
+            <div class="box-cardapio">
+                <h2>Nosso Cardápio Estelar</h2>
+                <p>Cada prato no Galáxia Gourmet foi cuidadosamente desenvolvido para refletir a grandiosidade e a diversidade do universo.</p>
+                <p>Da Terra à borda do cosmos, trazemos uma fusão de sabores que promete surpreender todos os exploradores famintos.</p>
+                <p>Viaje pelo nosso cardápio intergaláctico e descubra pratos que são verdadeiras constelações de sabor, preparados por chefs visionários.</p>
+                <p>Explore nossas opções e encontre a combinação perfeita para uma refeição que é verdadeiramente fora deste mundo:</p>
+            </div>
+            <table class="box-comida">
                 <thead>
                     <tr>
-                        <th>Prato</th>
-                        <th>Descrição</th>
-                        <th>Preço</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Black Hole Deluxe Burger</td>
-                        <td>Hambúrguer suculento com queijo cheddar, bacon crocante e molho especial de outra galáxia</td>
-                        <td>R$ 29,90</td>
+                        <td></td>
+                        <td id="box-comida"><img src="imagens/salada.jpg" alt="salada de folhas e filezinhos de carne" id="lanche"><br><strong>Salada Saturno</strong><br><br>Anéis crocantes de cebola sobre uma cama de folhas verdes, finalizada com filezinhos de carne<br>R$ 35,90</td>
+                        <td></td>
+                        <td id="box-comida"><img src="imagens/hamburguer.jpg" alt="hamburguer de carne bovina" id="lanche"><br><strong>Black Hole Deluxe Burger</strong><br><br>Hambúrguer suculento com queijo cheddar, bacon crocante e molho especial de outra galáxia<br>R$ 29,90</td>
                     </tr>
                     <tr>
-                        <td>Pizza de Meteorito de Pepperoni</td>
-                        <td>Explosão de pepperoni e queijo derretido que vai fazer seu paladar flutuar no espaço</td>
-                        <td>R$ 39,90</td>
+                        <td></td>
+                        <td></td>
+                        <td id="box-comida"><img src="imagens/shake-choco.jpg" alt="milkshake de chocolate" id="lanche"><img src="imagens/shake-morango.jpg" alt="milkshake de morango" id="lanche"><br><strong>Milkshake Via Láctea</strong><br><br>Milkshake cremoso de chocolate ou morango com granulado estelar<br>R$ 18,90</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td>Salada Saturno</td>
-                        <td>Anéis crocantes de cebola sobre uma cama de folhas verdes, finalizada com tiras de carne</td>
-                        <td>R$ 25,90</td>
+                        <td></td>
+                        <td id="box-comida"><img src="imagens/carbonara.jpg" alt="espaguete ao molho carbonara" id="lanche"><br><strong>Espaguete Cometa Carbonara</strong><br><br>Massas envoltas em um rastro de molho carbonara e lascas de bacon<br>R$ 34,90</td>                   
+                        <td></td>
+                        <td id="box-comida"><img src="imagens/ravioli.jpg" alt="ravioli ao molho bolonhesa" id="lanche"><br><strong>Ravioli Meteorito de Bolonhesa</strong><br><br>Explosão de sabores: Ravioli ao molho bolonhesa e queijo derretido que vai fazer seu paladar flutuar no espaço<br>R$ 39,90</td>
                     </tr>
                     <tr>
-                        <td>Espaguete Cometa Carbonara</td>
-                        <td>Massas envoltas em um rastro de molho carbonara e lascas de bacon</td>
-                        <td>R$ 34,90</td>
+                        <td></td>
+                        <td></td>
+                        <td id="box-comida"><img src="imagens/petit-gateau.jpg" alt="petit gateau tradicional" id="lanche"><br><strong>Petit Gateau Estelar</strong><br><br>Bolo de chocolate com centro cremoso e uma bola de sorvete de baunilha para finalizar<br>R$ 22,90</td>
                     </tr>
                     <tr>
-                        <td>Milkshake Via Láctea</td>
-                        <td>Milkshake de chocolate cremoso com granulado estelar</td>
-                        <td>R$ 18,90</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
                     </tr>
                     <tr>
-                        <td>Petit Gateau Estelar</td>
-                        <td>Bolo de chocolate com centro cremoso e uma bola de sorvete de baunilha para finalizar</td>
-                        <td>R$ 22,90</td>
+                        <td></td>
+                        
                     </tr>
                 </tbody>
             </table>
@@ -70,7 +81,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Galáxia Gourmet</p>
+        <p><strong>&copy; 2024 Galáxia Gourmet</p></strong>
+        <a href="index.html"><img src="imagens/icon-home.png" alt="ícone home" class="social-icon"></a>
     </footer>
 </body>
 </html>
